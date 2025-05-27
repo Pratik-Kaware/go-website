@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: go-web
+  labels:
+    app: go-web
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: go-web
+  template:
+    metadata:
+      labels:
+        app: go-web
+    spec:
+      containers:
+      - name: go-web
+        image: pratk24/go-website:v1
+        ports:
+        - containerPort: 8080
