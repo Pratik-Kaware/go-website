@@ -8,7 +8,7 @@ image:
   repository: pratk24/go-website
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "10016307834"
+  tag: "15271142376"
 
 ingress:
   enabled: false
